@@ -11,8 +11,10 @@ jobs:
     #environment: testing
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.jjzemnx.mongodb.net
-      MONGODB_USERNAME: triplek
-      MONGODB_PASSWORD: jf4dlX7jF05024Ae
+      #MONGODB_USERNAME: triplek
+      #MONGODB_PASSWORD: jf4dlX7jF05024Ae
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
