@@ -1,3 +1,5 @@
+#This issue event is only working or trigger in main branch
+
 name: Handle issues
 on: issues
 jobs:
